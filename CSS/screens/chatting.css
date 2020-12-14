@@ -1,0 +1,218 @@
+#chat-screen {
+    background-image: url("https://images.unsplash.com/photo-1607679314628-dbeaebaa3173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");   
+}
+
+#chat-screen .alternative-screen-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.chatting-header {
+    background-color:lavenderblush;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.main-chatting {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.chatting_timestamp {
+    background-color: rgba(230,230,250,0.5);
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    opacity:0;
+}
+
+.chatting_content_receiving, .chatting_content_sending {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0;
+}
+
+.received-date {
+    animation: Timestamp-Fadein 2s ease-in-out forwards;
+}
+
+.sended-date {
+    animation: Timestamp-Fadein 2s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.chatting_content_receiving{
+    animation: Receiving-Fadein 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.chatting_content_sending {
+    flex-direction: row-reverse;
+    animation: Sending-Fadein 2s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+.chatting_content_receiving img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    animation: Profile-Rotate 1s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.chatting_text_who {
+    display: block;
+    font-size: 13px;
+    margin: 3px 0 10px 0;
+    color: white;
+}
+
+.chatting_text_info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chatting_text_info_bubble_receiving, .chatting_text_info_bubble_sending {
+    background-color: white;
+    padding: 8px;
+    color: black;
+    border-radius: 10px;
+}
+
+.chatting_text_info_bubble_receiving {
+    border-top-left-radius: 0px;
+}
+
+.chatting_text_info_bubble_sending {
+    border-top-right-radius: 0px;
+}
+
+.chatting_text_info_bubble_sending {
+    background-color: #FFD603;
+}
+
+.chatting_text_info_time {
+    font-size: 12px;
+    margin: 0 8px;
+    color: white;
+}
+
+.reply{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    color: var(--gray-color);
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.reply:focus-within .reply_add,
+.reply:focus-within i {
+    opacity: 0;
+}
+
+.reply:focus-within .reply_input {
+    transform: translateX(-30px) scaleX(1.1);
+}
+
+.reply_add {
+    margin-right: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.reply_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(199, 198, 198);
+    border-radius: 25px;
+    padding: 1px 1px 1px 10px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.reply_input input {
+    border: none;
+    background-color: whitesmoke;
+}
+
+.reply_input i {
+    margin-left: 15px;
+}
+
+.reply_input .fa-arrow-up {
+    color: black;
+    background-color:#FFD603;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reply_input_icon {
+    display: flex;
+    align-items: center;
+}
+
+.reply i:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@keyframes Receiving-Fadein {
+    from {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes Sending-Fadein {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes Timestamp-Fadein {
+    rom {
+        opacity: 0;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes Profile-Rotate {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: none;
+    }
+}

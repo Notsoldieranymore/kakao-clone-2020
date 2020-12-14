@@ -1,0 +1,88 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+/*components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/alternative-screen-header.css";
+@import "components/no-mobile.css";
+/*screens*/
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chatting.css";
+@import "screens/variables.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1607610579335-773dc39f92c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80") ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-screen {
+    padding: 0 var(--horizontal-space);
+    color:rgb(228, 226, 226);
+}
+
+.subtitle-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: rgb(228, 226, 226);
+    border-top: 1px solid rgb(228, 226, 226);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fa-exclamation-circle {
+    color: tomato;
+}
+
+.main-icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.main-icons__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main-icons__icon i {
+    margin-bottom: 10px;
+}
+
+.main-icons__icon:hover {
+    box-shadow: 3px 3px 10px 1px white;
+    border-radius: 20px;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.NEW-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px;
+    margin-left: 10px;
+}

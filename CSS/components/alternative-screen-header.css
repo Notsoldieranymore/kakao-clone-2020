@@ -1,0 +1,34 @@
+.alternative-screen-header {
+    margin-top: 20px;
+    padding: var(--horizontal-space);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.alternative-screen-header-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.alternative-screen-header_column {
+    width: 33%;
+}
+
+.alternative-screen-header_column:first-child {
+    margin-right: auto;
+}
+
+.alternative-screen-header_column:nth-child(2) {
+    text-align: center;
+}
+
+.alternative-screen-header_column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.alternative-screen-header_column .fa-bars  {
+    margin-left: 25px;
+}

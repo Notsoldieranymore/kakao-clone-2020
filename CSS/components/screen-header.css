@@ -1,0 +1,30 @@
+.screen-header {
+    margin-top: 20px;
+    padding: var(--horizontal-space);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span, .screen-header__icons a {
+    margin-left: 25px;
+}
+
+@keyframes CogRotate {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.fa-cog:hover {
+    animation: CogRotate 3s linear infinite;
+}

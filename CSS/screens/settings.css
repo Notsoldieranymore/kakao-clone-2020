@@ -1,0 +1,44 @@
+
+.settings-subtitle_app {
+    border-bottom: 1px solid rgb(228, 226, 226);
+    padding-bottom: 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.settings-subtitle__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid rgb(228, 226, 226);
+}
+
+.settings-subtitle__content-title {
+    display: flex;
+    align-items: center;
+}
+
+.settings-subtitle__content-title i {
+    margin: 0 20px 0 10px;
+}
+
+.settings-subtitle__content-info {
+    color:  rgb(253, 253, 110);
+}
+
+.settings-subtitle__content:last-child {
+    border-bottom: none;
+}
+
+.settings-subtitle_personal {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.settings-subtitle__content:hover {
+    box-shadow: 3px 3px 10px 1px white;
+    border-radius: 20px;
+    border-bottom: none;
+    cursor: pointer;
+}

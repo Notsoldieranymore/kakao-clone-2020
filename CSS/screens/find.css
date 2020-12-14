@@ -1,0 +1,98 @@
+.because-of-bts {
+    height: 110vh;
+}
+
+.find-content__nothing {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.find-content {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.find-content:hover {
+    box-shadow: 3px 3px 10px 1px white;
+    border-radius: 20px;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.find-content__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 7px 0;
+}
+
+.find-content__tag {
+    font-size: 17px;
+    margin: 7px 0;  
+}
+
+.find-content__members {
+    display: flex;
+    align-items: center;
+}
+
+.find-content__members-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 7px;
+} 
+
+.find-content__members-figure, .find-content__members-line {
+    margin-right: 7px;
+}
+
+.find-content__members-active {
+    color: magenta;
+}
+
+.find-content__img {
+    position: relative;
+}
+
+.find-content__img-방탄 {
+    width:120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.find-content__img-heart {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 12px;
+    position: absolute;
+    right: 7px;
+    bottom: 10px;
+}
+
+.find-content {
+    border-bottom: 1px solid rgb(228, 226, 226);
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.2);
+        color: tomato;
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.find-content__img-heart:hover {
+    animation: heartbeat 1s ease-in-out infinite;
+}

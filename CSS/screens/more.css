@@ -1,0 +1,36 @@
+.more__suggestions {
+    display: flex;
+}
+
+.more__suggestions-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.more__suggestions-icons:hover {
+    box-shadow: 3px 3px 10px 1px white;
+    border-radius: 20px;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.more__suggestions img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.more__suggestions-icons span {
+    color: rgb(228, 226, 226);
+    font-weight: 600;
+}
+
+.more__contents-title {
+    padding: 20px 0;
+    border-top: 1px solid rgb(228, 226, 226);;
+    font-weight: 600;
+}

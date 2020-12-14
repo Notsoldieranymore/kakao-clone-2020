@@ -1,0 +1,70 @@
+.please-login {
+    background-image: url("https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2134&q=80");
+}
+
+.Welcome-header {
+    margin: 90px;
+    text-align: center;
+    color: white;
+}
+
+.Welcome-header__title {
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.Welcome-header__text {
+    color:  rgb(228, 226, 226);
+    opacity: 0.8;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.login-form__id, .login-form__password {
+    border: 0px;
+    border-bottom: 2px solid rgb(228, 226, 226);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 17px;
+    transition: border-color 1s ease-in-out;
+}
+
+.login-form__id, .login-form__password::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-form__login, .login-form__signup{
+    border: 0px;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: lavender;
+    cursor: pointer;
+}
+
+.login-form input:first-child:focus,
+.login-form input:nth-child(2):focus {
+    border-bottom: 3px solid yellow;
+}
+
+.login-form__login:hover, .login-form__signup:hover{
+    box-shadow: 1px 1px 20px 3px lavender;
+}
+
+.login-form__annotation {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0px;
+    color: rgb(253, 253, 110);
+}
+
+.login-form__annotation:visited {
+    color: rgb(253, 253, 110);
+}
